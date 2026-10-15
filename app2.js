@@ -235,31 +235,6 @@ const SPELLS=[
   $('spellClose').onclick=close;
   magic.addEventListener('click',e=>{ if(e.target===magic) close(); });
   addEventListener('keydown',e=>{ if(e.key==='Escape'){close(); $('prize').classList.remove('on');} });
-  // آیا هدفِ رویداد یک فیلدِ فرم است؟ (این‌ها باید آزاد بمانند)
-  const inField = t => t && t.closest && t.closest('input,textarea,select,#prizeCode,.prize .code');
-
-  // کپی/برش: جلوی رفتنِ متن به کلیپ‌بورد را می‌گیریم و طلسم نشان می‌دهیم
-  function block(e){
-    if(inField(e.target)) return;          // در فرم آزاد است
-    e.preventDefault();
-    try{ if(e.clipboardData) e.clipboardData.setData('text/plain',''); }catch(_){}
-    cast();
-  }
-  document.addEventListener('copy',block);
-  document.addEventListener('cut',block);
-  // انتخاب با ماوس و کشیدن را هم می‌بندیم (بیرون از فرم)
-  document.addEventListener('selectstart',e=>{ if(!inField(e.target)) e.preventDefault(); });
-  document.addEventListener('dragstart',  e=>{ if(!inField(e.target)){ e.preventDefault(); cast(); } });
-  document.addEventListener('contextmenu',e=>{ if(!inField(e.target)){ e.preventDefault(); cast(); } });
-  addEventListener('beforeprint',cast);
-  addEventListener('keydown',e=>{
-    if(!(e.ctrlKey||e.metaKey)) return;
-    const k=e.key.toLowerCase();
-    if(inField(e.target) && (k==='c'||k==='x'||k==='a'||k==='v')) return; // در فرم آزاد
-    if(k==='s'||k==='u'){ e.preventDefault(); cast(); }
-    else if(k==='a'||k==='c'||k==='x'){ e.preventDefault(); cast(); }
-    else if(k==='p'){ e.preventDefault(); cast(); setTimeout(()=>{close();print();},2500); }
-  });
 })();
 
 /* ═══════════════ ذرات جشن ═══════════════ */
