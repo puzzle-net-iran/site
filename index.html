@@ -7,6 +7,9 @@
 <meta name="description" content="پروپوزال جامع خدمات گروه فنی پازل‌نت برای هولدینگ‌ها — زیرساخت، مرکز داده، امنیت، نرم‌افزار، هوش مصنوعی، ارز دیجیتال و پرداخت‌های بین‌المللی، هوشمندسازی، تأمین و پشتیبانی.">
 <meta name="theme-color" content="#05070D">
 <!-- ═══ فونت B Yekan — به‌صورت WOFF2 داخل همین فایل جاسازی شده است ═══ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,8 +43,9 @@
 </header>
 
 <div class="hero">
-  <canvas id="heroCanvas" aria-hidden="true"></canvas>
   <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-txt">
     <span class="eyebrow">پروپوزال همکاری راهبردی با هولدینگ‌ها</span>
     <h1>زیرساخت فناوری شما،<br><span class="shine">یک مغز به‌هم‌پیوسته است.</span></h1>
     <p class="lead">
@@ -52,6 +56,13 @@
     <div class="hero-cta">
       <a class="btn btn-solid" href="#network">ورود به شبکه‌ی عصبی</a>
       <a class="btn btn-ghost" href="#ptable">جدول فکری خدمات</a>
+    </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hv-bar"><span class="hv-dot"></span><span class="hv-dot y"></span><span class="hv-dot g"></span><span class="hv-title">مغز زیرساخت — نمای زنده</span><span class="hv-live">زنده</span></div>
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="hv-chips"><span><b class="num">۴۸</b> سرویس تخصصی</span><span><b class="num">۸</b> حوزه‌ی یکپارچه</span><span>پایش <b class="num">۲۴×۷</b></span></div>
+      </div>
     </div>
     <div class="ticker"><div class="tk" id="ticker"></div></div>
     <div class="stats">
@@ -66,12 +77,13 @@
 <section id="why">
   <div class="wrap">
     <div class="sec-head rv">
+      <span class="sec-ghost" aria-hidden="true">۰۱</span>
       <span class="eyebrow">چرا پازل‌نت</span>
       <h2>مشکل هولدینگ‌ها نبودِ پیمانکار نیست؛ پراکندگی پیمانکارهاست.</h2>
       <p>وقتی شبکه با یک شرکت است، سرور با شرکت دیگر، نرم‌افزار با تیم سوم و پرداخت ارزی با یک واسطه‌ی ناشناس، هر خرابی به جلسه‌ی تعیین تقصیر تبدیل می‌شود. ما همان لایه‌ای هستیم که همه را به هم وصل می‌کند.</p>
     </div>
     <div class="pillars">
-      <div class="pillar card rv">
+      <div class="pillar card rv wide">
         <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></div>
         <h3>یک قرارداد، همه‌ی لایه‌ها</h3>
         <p>از کابل‌کشی و رک تا سامانه‌ی نرم‌افزاری، هوش مصنوعی و درگاه پرداخت، همه در یک دامنه‌ی مسئولیت. هماهنگی بین پیمانکارها دیگر کار شما نیست.</p>
@@ -98,6 +110,7 @@
 <section id="services">
   <div class="wrap">
     <div class="sec-head rv">
+      <span class="sec-ghost" aria-hidden="true">۰۲</span>
       <span class="eyebrow">تفکیک کامل خدمات</span>
       <h2>۴۸ سرویس، در ۸ حوزه‌ی تخصصی</h2>
       <p>هر سرویس به‌تنهایی قابل سفارش است و همه‌ی آن‌ها کنار هم یک زیرساخت کامل می‌سازند. رنگ هر حوزه، همان رنگی است که در شبکه‌ی عصبی و جدول فکری می‌بینید.</p>
@@ -110,11 +123,13 @@
 <section id="network">
   <div class="wrap">
     <div class="sec-head rv" style="max-width:840px">
+      <span class="sec-ghost" aria-hidden="true">۰۳</span>
       <span class="eyebrow">امضای پازل‌نت</span>
       <h2>شبکه‌ی عصبی خدمات</h2>
       <p>هر گره یک سرویس است، هر رشته یک وابستگی واقعی. نشانگر را روی هر گره ببرید تا وابستگی‌های احتمالی‌اش روشن شود؛ یعنی سرویس‌هایی که معمولاً باید کنار آن اجرا شوند. با «حالت نقشه» کل شبکه باز می‌شود و به یک نقشه‌ی کامل خدمات تبدیل می‌شود.</p>
     </div>
     <div class="net-wrap rv">
+      <div class="net-frame"><span class="nf-dot"></span> کنسول شبکه‌ی عصبی خدمات<span class="nf-live">LIVE</span></div>
       <div class="net-shell">
         <canvas id="netCanvas"></canvas>
         <div class="net-hud">
@@ -141,6 +156,7 @@
 <section id="ptable">
   <div class="wrap">
     <div class="sec-head rv" style="max-width:860px">
+      <span class="sec-ghost" aria-hidden="true">۰۴</span>
       <span class="eyebrow">جدول فکری پازل‌نت</span>
       <h2>جدول تناوبی خدمات</h2>
       <p>همان‌طور که مندلیف عناصر را بر اساس خواصشان کنار هم چید، ما هم ۴۸ سرویس پازل‌نت را در ۸ گروه مرتب کرده‌ایم. هر خانه یک عنصر است: شماره، نماد و نام. روی هر عنصر کلیک کنید تا توضیحش را ببینید.</p>
@@ -175,6 +191,7 @@
 <section id="process">
   <div class="wrap">
     <div class="sec-head rv">
+      <span class="sec-ghost" aria-hidden="true">۰۵</span>
       <span class="eyebrow">فرآیند همکاری</span>
       <h2>از اولین جلسه تا پشتیبانی پایدار</h2>
       <p>این چهار گام به‌ترتیب اجرا می‌شوند و خروجی هر گام پیش از شروع گام بعد به تأیید کارفرما می‌رسد.</p>
@@ -191,6 +208,7 @@
 <section id="models">
   <div class="wrap">
     <div class="sec-head rv">
+      <span class="sec-ghost" aria-hidden="true">۰۶</span>
       <span class="eyebrow">مدل قرارداد</span>
       <h2>سه شکل همکاری، متناسب با اندازه‌ی مجموعه</h2>
       <p>مدل‌ها قابل ترکیب‌اند؛ برای نمونه اجرای پروژه‌ای به‌علاوه‌ی قرارداد سالانه‌ی پشتیبانی.</p>
@@ -198,7 +216,7 @@
     <div class="models">
       <div class="model card rv"><h3>پروژه‌ای</h3><div class="who">برای یک نیاز مشخص و زمان‌دار</div>
         <ul><li>دامنه، زمان‌بندی و هزینه‌ی ثابت</li><li>تحویل با مستندات و آموزش</li><li>گارانتی و دوره‌ی تضمین پس از تحویل</li><li>مناسب راه‌اندازی شعبه یا مرکز داده‌ی جدید</li></ul></div>
-      <div class="model card mid rv"><h3>قرارداد سالانه‌ی پشتیبانی</h3><div class="who">پیشنهاد ما به هولدینگ‌ها</div>
+      <div class="model card mid rv"><span class="ribbon">پیشنهاد پازل‌نت</span><h3>قرارداد سالانه‌ی پشتیبانی</h3><div class="who">پیشنهاد ما به هولدینگ‌ها</div>
         <ul><li>سطح خدمت و زمان پاسخ مکتوب (SLA)</li><li>پایش ۲۴×۷ و هشدار پیش از بروز خرابی</li><li>سهمیه‌ی ماهانه‌ی بازدید حضوری</li><li>گزارش مدیریتی ماهانه و بازنگری فصلی</li><li>اولویت پاسخ‌دهی و نرخ ترجیحی تجهیزات</li></ul></div>
       <div class="model card rv"><h3>تیم مستقر</h3><div class="who">برای مجموعه‌های چندشرکتی</div>
         <ul><li>کارشناس تمام‌وقت مستقر در محل شما</li><li>پشتیبانی تیم تخصصی پازل‌نت پشت سر او</li><li>مدیریت کامل واحد فناوری اطلاعات</li><li>بدون هزینه‌ی استخدام، آموزش و جایگزینی نیرو</li></ul></div>
@@ -209,12 +227,13 @@
 <section id="products">
   <div class="wrap">
     <div class="sec-head rv">
+      <span class="sec-ghost" aria-hidden="true">۰۷</span>
       <span class="eyebrow">محصولات گروه فنی پازل‌نت</span>
       <h2>محصولاتی که همین امروز زنده‌اند</h2>
       <p>گروه فنی پازل‌نت — ارائه‌دهنده خدمات نوین IT — در کنار پروژه‌های زیرساختی، محصول هم می‌سازد و خودش آن را اداره می‌کند. این‌ها دو محصول زنده‌ی گروه‌اند:</p>
     </div>
     <div class="prod-grid">
-      <div class="prod-card card rv">
+      <div class="prod-card card rv span7">
         <span class="prod-badge">زنده و فعال</span>
         <h3>فروش‌بار — فروشگاه‌ساز و مارکت‌پلیس چندفروشندگی</h3>
         <p>هر کسب‌وکار، فروشگاه خودش را با پنل و آدرس اختصاصی دارد و در یک بازار مشترک کنار بقیه می‌فروشد. چهار نوع محصول — فیزیکی، مجازی، ترکیبی و نوبت‌دهی — درگاه پرداخت آنلاین و کارت‌به‌کارت، سیستم لایسنس فروشگاه‌ها و اپلیکیشن اندرویدی، همه روی یک پلتفرم یکپارچه.</p>
@@ -223,7 +242,7 @@
         </div>
         <a class="btn btn-solid" href="https://forushbar.ir" target="_blank" rel="noopener">ورود به فروش‌بار</a>
       </div>
-      <div class="prod-card card rv">
+      <div class="prod-card card rv span5">
         <span class="prod-badge soon">در حال رونمایی</span>
         <h3>پکیج هوش مصنوعی درون‌سازمانی پازل‌نت</h3>
         <p>یک سرور هوش مصنوعی که داخل سازمان شما مستقر می‌شود؛ داده‌ها و سامانه‌های سازمان به آن وصل می‌شوند و کارکنان از طریق API به آن دسترسی دارند — بدون اینکه داده‌ای از سازمان خارج شود. برای شرایط خاص و محیط‌های بدون اینترنت هم مدل آفلاین روی سیستم‌ها نصب می‌شود.</p>
@@ -239,6 +258,7 @@
 <section id="founder">
   <div class="wrap">
     <div class="founder card rv">
+      <span class="qmark" aria-hidden="true">”</span>
       <div class="avatar">س‌ر</div>
       <div>
         <h3>سهند رحیم اربابی</h3>
@@ -255,6 +275,7 @@
 <section id="clients">
   <div class="wrap">
     <div class="sec-head rv">
+      <span class="sec-ghost" aria-hidden="true">۰۸</span>
       <span class="eyebrow">همکاری‌ها</span>
       <h2>بخشی از مشتریان گروه فنی پازل‌نت</h2>
       <p>در شاخه‌های مختلف خدمات گروه — از شبکه و زیرساخت تا نرم‌افزار و هوشمندسازی — این مجموعه‌ها در فهرست مشتریان پازل‌نت‌اند:</p>
@@ -278,6 +299,7 @@
 <section id="contact">
   <div class="wrap">
     <div class="sec-head rv">
+      <span class="sec-ghost" aria-hidden="true">۰۹</span>
       <span class="eyebrow">گام بعدی</span>
       <h2>یک جلسه‌ی ممیزی رایگان</h2>
       <p>یک بازدید فنی از زیرساخت فعلی شما انجام می‌دهیم و گزارش وضعیت موجود را بدون تعهد تحویل می‌دهیم. تصمیم برای ادامه، بعد از دیدن آن گزارش.</p>
@@ -317,16 +339,35 @@
   </div>
 <div class="contact-info panel rv">
       <span class="ci">📍 <b>دفتر گرگان:</b> خیابان ولیعصر، عدالت ۲۳، مجتمع کیهان، واحد ۱</span>
-      <span class="ci">📞 <a href="tel:+989014859568">۰۹۰۱۴۸۵۹۵۶۸</a></span>
-      <span class="ci">📞 <a href="tel:+989101060616">۰۹۱۰۱۰۶۰۶۱۶</a></span>
+      <span class="ci">📞 <a href="tel:+989014859568">۰۹۰۱۴۸۵۹۵۶۸</a> · <a href="tel:+989101060616">۰۹۱۰۱۰۶۰۶۱۶</a></span>
       <span class="ci">🌐 <b>puzzlenet-group.ir</b></span>
     </div>
 </section>
 
 <footer><div class="wrap">
-  گروه فنی پازل‌نت — ارائه‌دهنده خدمات نوین IT · مشاوره، فروش، اجرا و پشتیبانی زیرساخت فناوری اطلاعات · puzzlenet-group.ir<br>
-  <span class="fv" id="footVer"></span>
-</div></footer>
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">گروه فنی پازل‌نت</div>
+        <p>ارائه‌دهنده خدمات نوین IT — یک تیم، یک معماری و یک نقطه‌ی پاسخ‌گویی برای کل زیرساخت فناوری اطلاعات سازمان شما.</p>
+      </div>
+      <div>
+        <h4>دسترسی سریع</h4>
+        <div class="foot-links">
+          <a href="#services">خدمات</a>
+          <a href="#network">شبکه‌ی عصبی</a>
+          <a href="#products">محصولات</a>
+          <a href="#clients">مشتریان</a>
+          <a href="#contact">تماس</a>
+        </div>
+      </div>
+      <div>
+        <h4>تماس</h4>
+        <p>گرگان، خیابان ولیعصر، عدالت ۲۳، مجتمع کیهان، واحد ۱<br>۰۹۰۱۴۸۵۹۵۶۸ · ۰۹۱۰۱۰۶۰۶۱۶</p>
+      </div>
+    </div>
+    <div class="foot-row">گروه فنی پازل‌نت — ارائه‌دهنده خدمات نوین IT · مشاوره، فروش، اجرا و پشتیبانی زیرساخت فناوری اطلاعات · puzzlenet-group.ir<br>
+    <span class="fv" id="footVer"></span></div>
+  </div></footer>
 
 <div class="modal" id="magic" role="dialog" aria-modal="true" aria-label="طلسم پازل‌نت">
   <div class="mbox">
