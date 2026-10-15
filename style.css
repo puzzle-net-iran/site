@@ -21,7 +21,7 @@
 html{scroll-behavior:smooth}
 body{font-family:var(--font);background:var(--ink);color:var(--text);line-height:2;
   overflow-x:hidden;-webkit-font-smoothing:antialiased;font-synthesis:weight;
-  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;padding-top:104px}
+  padding-top:104px}
 input,textarea,select,#prizeCode,.prize .code{-webkit-user-select:text!important;user-select:text!important;-webkit-touch-callout:default!important}
 ::selection{background:rgba(232,17,45,.45);color:#fff}
 ::-webkit-scrollbar{width:10px}::-webkit-scrollbar-thumb{background:#2A1220;border-radius:99px;border:2px solid var(--ink)}
